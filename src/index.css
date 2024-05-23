@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom scrollbar styles */
+.scrollbar-thumb {
+  @apply bg-gray-500 rounded-full;
+}
+
+.scrollbar-track {
+  @apply bg-gray-200 rounded-full;
+}
+
+/* Webkit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B78E6;
+  border-radius: 5px;
+}
+
+
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8B78E6 #000000;
+}
