@@ -5,7 +5,7 @@ import Notfound from './Notfound.jsx'
 const Trailer = () => {
     const navigate = useNavigate()
     const {pathname} = useLocation()  
-    const category = pathname.includes("movie") ? "movie" : "tv";
+    const category = (pathname.includes("movie") ? "movie" : "tv");
     const info = `${category}Info`;
     const ytVideoUri = useSelector((state) => state[category][info]?.videos.key);
     const ytVideo = ytVideoUri;
